@@ -37,8 +37,7 @@ cd Downloads
 sudo apt update
 sudo apt install apache2 
 ```
-![Poll Mockup](./install.png)
-
+ file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/install.png
 ---
 
 >Checking the status of appache 2
