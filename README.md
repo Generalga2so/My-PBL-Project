@@ -14,7 +14,7 @@
 ---
 >EC2 instance
 
-![Poll Mockup](./launching-of-an-instance.png)
+![launching-of-an-instance](https://user-images.githubusercontent.com/125014455/224511425-70ed44d5-6845-440c-83b6-3a51a21f191f.png)
 
 ---
 
@@ -25,7 +25,7 @@ cd Downloads
  ssh -i "project1.pem" ubuntu@ec2-54-160-136-189.compute-1.amazonaws.com
  ```
 
-![Poll Mockup](./ssh-and-pemkey.png)
+ file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/ssh-and-pemkey.png
 
 ---
 ---
@@ -37,20 +37,21 @@ cd Downloads
 sudo apt update
 sudo apt install apache2 
 ```
- file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/install.png
+![install](https://user-images.githubusercontent.com/125014455/224511555-194bb6b6-baf2-496c-8c0d-9accffc54d34.png)
+
 ---
 
 >Checking the status of appache 2
 ```
 sudo systemctl status apache2
 ```
-![Poll Mockup](./status.png)
+ file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/status.png
 
 ---
 
 >Verification of Apache 2 installation
 
-![Poll Mockup](./welcome.png)
+ file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/welcome.png
 
 ---
 ---
@@ -67,7 +68,7 @@ sudo apt install mysql-server
 sudo mysql
 ```
 
-![Poll Mockup](./sudo-mysql.png)
+ file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/sudo-mysql.png
 
 ---
 
@@ -84,14 +85,16 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password
 sudo mysql_secure_installation 
 ```
 
-![Poll Mockup](./mysql-secure.png)
+![mysql-secure](https://user-images.githubusercontent.com/125014455/224511763-6ec2c3ae-b4cb-4ce6-8f80-722e6f25f44d.png)
+
 
 ---
 >Test to see if you’re able to login into the MySQL console by typing: 
 ```
 $ sudo mysql -p 
 ```
-![Poll Mockup](./mysql-p.png)
+![mysql-p](https://user-images.githubusercontent.com/125014455/224511804-b2cdffa5-0957-4e4f-956c-fe805ec4e6fd.png)
+
 
 mysql> exit 
 
@@ -105,7 +108,8 @@ mysql> exit
 sudo apt install php libapache2-mod-php php-mysql
 ```
 
-![Poll Mockup](./installing-php.png)
+![installing-php](https://user-images.githubusercontent.com/125014455/224511834-62f55079-b774-44b5-8ab2-193e55916c80.png)
+
 
 ---
 
@@ -124,7 +128,8 @@ sudo chown -R $USER:$USER /var/www/projectlamp
 sudo vi /etc/apache2/sites-available/projectlamp.conf
 ```
 
-![poll mockup](./sudo-vi.png)
+![sudo-vi](https://user-images.githubusercontent.com/125014455/224511901-aa0ae1d9-fd0f-4fa8-9c74-ee50dc8149df.png)
+
 
 >This will create a new blank file. Paste in the following bare-bones configuration by hitting on i on the keyboard to enter the insert mode, and paste the text:
 ```
@@ -139,7 +144,8 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 ```
 >To save and close the file, simple hit esc on your keyboard and type **:wq** : for command w for write q for quit
 
-![poll mockup](./Screenshot%20from%202023-03-11%2011-40-52.png)
+![Screenshot from 2023-03-11 11-40-52](https://user-images.githubusercontent.com/125014455/224511912-64b059cd-ddfd-47dc-8314-295f07e126e1.png)
+
 
 >You can use the ls command to show the new file in the sites-available directory 
 ```
@@ -192,7 +198,8 @@ DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>
 ```
 
-![poll mockup](./sudo-vm.png)
+![sudo-vm](https://user-images.githubusercontent.com/125014455/224511938-d525ddfd-7b2b-4937-8faa-d8f1ce7f8722.png)
+
 
 >After saving and closing the file, you will need to reload Apache so the changes take effect: 
 ```
@@ -214,11 +221,11 @@ vim /var/www/projectlamp/index.php
 phpinfo();
 ```
 
-![poll mockup](./vm-var.png)
-
+ file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/vm-var.png
 >When you are finished, save and close the file, refresh the page and you will see a page similar to this:
 
-![poll mockup](./php.jpeg)
+![php](https://user-images.githubusercontent.com/125014455/224511977-5570caaf-2914-4bd2-a9c4-bf8387a8c4f2.jpeg)
+
 
 >After checking the relevant information about your PHP server through that page, it’s best to remove the file you created as it contains sensitive information about your PHP environment -and your Ubuntu server. You can use rm to do so: 
 ```
