@@ -14,7 +14,7 @@
 ---
 >EC2 instance
 
-![launching-of-an-instance](https://user-images.githubusercontent.com/125014455/224511425-70ed44d5-6845-440c-83b6-3a51a21f191f.png)
+![launching-of-an-instance](https://user-images.githubusercontent.com/125014455/224656215-40be0f65-c932-4834-af1d-96824ff4ca4f.jpg)
 
 ---
 
@@ -25,7 +25,7 @@ cd Downloads
  ssh -i "project1.pem" ubuntu@ec2-54-160-136-189.compute-1.amazonaws.com
  ```
 
- file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/ssh-and-pemkey.png
+![ssh-and-pemkey](https://user-images.githubusercontent.com/125014455/224656307-3f4daf90-dc86-42ce-9dd5-937034cf4412.jpg)
 
 ---
 ---
@@ -37,7 +37,9 @@ cd Downloads
 sudo apt update
 sudo apt install apache2 
 ```
-![install](https://user-images.githubusercontent.com/125014455/224511555-194bb6b6-baf2-496c-8c0d-9accffc54d34.png)
+
+![install](https://user-images.githubusercontent.com/125014455/224656596-8c301875-6d5d-40bc-aed3-d65b740e74b0.jpg)
+ 
 
 ---
 
@@ -45,13 +47,14 @@ sudo apt install apache2
 ```
 sudo systemctl status apache2
 ```
- file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/status.png
+
+![status](https://user-images.githubusercontent.com/125014455/224656775-13d2b1e9-1429-40b4-b71a-a0d23bdcd747.jpg)
 
 ---
 
 >Verification of Apache 2 installation
 
- file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/welcome.png
+![welcome](https://user-images.githubusercontent.com/125014455/224656826-5f14e135-0a54-4f23-90d6-28ca212280c8.jpg)
 
 ---
 ---
@@ -68,7 +71,7 @@ sudo apt install mysql-server
 sudo mysql
 ```
 
- file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/sudo-mysql.png
+![sudo-mysql](https://user-images.githubusercontent.com/125014455/224656989-2893cb5d-0ab1-4296-9ba5-65b277595636.jpg)
 
 ---
 
@@ -85,16 +88,15 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password
 sudo mysql_secure_installation 
 ```
 
-![mysql-secure](https://user-images.githubusercontent.com/125014455/224511763-6ec2c3ae-b4cb-4ce6-8f80-722e6f25f44d.png)
-
+![mysql-install](https://user-images.githubusercontent.com/125014455/224657118-ca49efcf-bd48-459b-9aca-c6e5b325bbfc.jpg)
 
 ---
 >Test to see if you’re able to login into the MySQL console by typing: 
 ```
 $ sudo mysql -p 
 ```
-![mysql-p](https://user-images.githubusercontent.com/125014455/224511804-b2cdffa5-0957-4e4f-956c-fe805ec4e6fd.png)
 
+![mysql-p](https://user-images.githubusercontent.com/125014455/224657245-4fab3852-5c74-434f-bb17-55333b2039ab.jpg)
 
 mysql> exit 
 
@@ -108,8 +110,7 @@ mysql> exit
 sudo apt install php libapache2-mod-php php-mysql
 ```
 
-![installing-php](https://user-images.githubusercontent.com/125014455/224511834-62f55079-b774-44b5-8ab2-193e55916c80.png)
-
+![installing-php](https://user-images.githubusercontent.com/125014455/224657373-f5eaf530-6ff4-4d94-ba54-6f8c0b42a3f8.jpg)
 
 ---
 
@@ -128,7 +129,7 @@ sudo chown -R $USER:$USER /var/www/projectlamp
 sudo vi /etc/apache2/sites-available/projectlamp.conf
 ```
 
-![sudo-vi](https://user-images.githubusercontent.com/125014455/224511901-aa0ae1d9-fd0f-4fa8-9c74-ee50dc8149df.png)
+![sudo-vi](https://user-images.githubusercontent.com/125014455/224657541-59275db0-0103-4a4c-a403-c73f2b354469.jpg)
 
 
 >This will create a new blank file. Paste in the following bare-bones configuration by hitting on i on the keyboard to enter the insert mode, and paste the text:
@@ -145,7 +146,6 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 >To save and close the file, simple hit esc on your keyboard and type **:wq** : for command w for write q for quit
 
 ![Screenshot from 2023-03-11 11-40-52](https://user-images.githubusercontent.com/125014455/224511912-64b059cd-ddfd-47dc-8314-295f07e126e1.png)
-
 
 >You can use the ls command to show the new file in the sites-available directory 
 ```
@@ -221,7 +221,9 @@ vim /var/www/projectlamp/index.php
 phpinfo();
 ```
 
- file:///home/aoa-clothings/Documents/DEVOPS/PBL%20Project/vm-var.png
+![vm-var](https://user-images.githubusercontent.com/125014455/224658045-9084a117-9712-4bc6-b9a9-d1b814d74a91.jpg)
+
+ 
 >When you are finished, save and close the file, refresh the page and you will see a page similar to this:
 
 ![php](https://user-images.githubusercontent.com/125014455/224511977-5570caaf-2914-4bd2-a9c4-bf8387a8c4f2.jpeg)
